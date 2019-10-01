@@ -4,7 +4,7 @@ pipeline {
     stage('Build & Test') {
       steps {
         tool 'default_maven'
-        sh '''export M2_HOME=/home/jenkins/tools/hudson.tasks.Maven_MavenInstallation/default_maven
+        sh '''export M2_HOME=/var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/default_maven
 export M2=$M2_HOME/bin
 export PATH=$M2:$PATH
 
